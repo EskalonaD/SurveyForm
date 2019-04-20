@@ -10,32 +10,47 @@
     <h1 id="title">Job Application Survey</h1>
     <p id="description">Answer for a few question & add some personal data so we could send you result</p>
     <form action="" id="survey-form">
-        <label  id="name-label"> Your name
+        <label  id="name-label"> Your name:
             <input type="text" id="name" required placeholder='Name'>
         </label>
-        <label  id="email-label"> Your email
+        <label  id="email-label"> Your email:
             <input type="email" id="email" required placeholder='e-mail'>
         </label>
-        <label  id="number-label"> Your phone number
+        
+        <label  id="number-label"> Your phone number:
             <input type="number" id="number" min='' max='' placeholder=''>
         </label>
-        <select name="" id="dropdown"></select>
-        <fieldset> What programming language do you prefer most?
-            <input type="radio" name="language">PHP
-            <input type="radio" name="language">JavaScript
-            <input type="radio" name="language">Ruby
-            <input type="radio" name="language">Python
-            <input type="radio" name="language">C++
-        </fieldset>
-        <label for="">
-
-            <input type="checkbox" value="">
-            <input type="checkbox" value="">
-            <input type="checkbox" value="">
-            <input type="checkbox" value="">
-            <input type="checkbox" value="">
+        <label> Choose nearliest amoun to your desired salary
+            <select name="salary" id="dropdown">
+                <option value="100">100$</option>
+                <option value="200">200$</option>
+                <option value="300">300$</option>
+                <option value="400">400$</option>
+                <option value="500">500$</option>
+                <option value="600">600$</option>
+                <option value="700">700$</option>
+                <option value="800">800$</option>
+                <option value="900">900$</option>
+                <option value="1000">1000$</option>
+                <option value="1000+">More than 1000$</option>
+            </select>
         </label>
-        <textarea name="" id="" cols="30" rows="10" placeholder='If you have some comments or suggestion type it here.''></textarea>
+        <fieldset> What programming language do you prefer most?
+            <input type="radio" name="preferable-language">PHP
+            <input type="radio" name="preferable-language">JavaScript
+            <input type="radio" name="preferable-language">Ruby
+            <input type="radio" name="preferable-language">Python
+            <input type="radio" name="preferable-language">C++
+        </fieldset>
+        <label for="">What programming language do you know at junior level at least?
+
+            <input type="checkbox" value="PHP">PHP
+            <input type="checkbox" value="JavaScript">JavaScript
+            <input type="checkbox" value="Ruby">Ruby
+            <input type="checkbox" value="Python">Python
+            <input type="checkbox" value="C++">C++
+        </label>
+        <textarea name="" id="" cols="30" rows="10" placeholder='If you have some comments or suggestions, type it here.''></textarea>
         <input type="button" value="" id="submit">
     </form>
 </body>
