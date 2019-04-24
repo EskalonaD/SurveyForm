@@ -10,16 +10,46 @@
     <h1 id="title">Job Application Survey</h1>
     <p id="description">Answer for a few question & add some personal data so we could send you result</p>
     <form action="post" id="survey-form">
-        <label  id="name-label"> Your name:
-            <input type="text" id="name" required placeholder='Name'>
-        </label>
-        <label  id="email-label"> Your email:
-            <input type="email" id="email" required placeholder='e-mail'>
+        <fieldset> 
+            <legend>
+                General Information
+
+            </legend>
+
+            <label  id="name-label"> Your name:
+                <input type="text" id="name" required placeholder='Name'>
+            </label>
+            <label  id="email-label"> Your email:
+                <input type="email" id="email" required placeholder='e-mail'>
+            </label>
+            
+            <label  id="number-label"> Your age:
+                <input type="number" id="number" min='18' max='100' placeholder=''>
+            </label>
+        </fieldset>
+    </label>
+    <fieldset> 
+        <legend>Tell us about your skills</legend>
+        <label for="">
+            What programming language do you prefer most?
+
+            <input type="radio" name="preferable-language">PHP
+            <input type="radio" name="preferable-language">JavaScript
+            <input type="radio" name="preferable-language">Ruby
+            <input type="radio" name="preferable-language">Python
+            <input type="radio" name="preferable-language">C++
+            
         </label>
         
-        <label  id="number-label"> Your age:
-            <input type="number" id="number" min='18' max='100' placeholder=''>
+        <label for="">What programming language do you know at junior level at least?
+            
+            <input type="checkbox" value="PHP">PHP
+            <input type="checkbox" value="JavaScript">JavaScript
+            <input type="checkbox" value="Ruby">Ruby
+            <input type="checkbox" value="Python">Python
+            <input type="checkbox" value="C++">C++
         </label>
+    </fieldset>
         <label> Choose nearliest amoun to your desired salary
             <select name="salary" id="dropdown">
                 <option value="100">100$</option>
@@ -34,24 +64,8 @@
                 <option value="1000">1000$</option>
                 <option value="1000+">More than 1000$</option>
             </select>
-        </label>
-        <fieldset> What programming language do you prefer most?
-            <input type="radio" name="preferable-language">PHP
-            <input type="radio" name="preferable-language">JavaScript
-            <input type="radio" name="preferable-language">Ruby
-            <input type="radio" name="preferable-language">Python
-            <input type="radio" name="preferable-language">C++
-        </fieldset>
-        <label for="">What programming language do you know at junior level at least?
-
-            <input type="checkbox" value="PHP">PHP
-            <input type="checkbox" value="JavaScript">JavaScript
-            <input type="checkbox" value="Ruby">Ruby
-            <input type="checkbox" value="Python">Python
-            <input type="checkbox" value="C++">C++
-        </label>
-        <textarea name="" id="" cols="30" rows="10" placeholder='If you have some comments or suggestions, type it here.''></textarea>
-        <input type="submit" value="" id="submit">
-    </form>
-</body>
+            <textarea name="" id="" cols="30" rows="10" placeholder='If you have some comments or suggestions, type it here.''></textarea>
+            <input type="submit" value="" id="submit">
+        </form>
+    </body>
 </html>
