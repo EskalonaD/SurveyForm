@@ -13,3 +13,20 @@ form {
     flex-direction: column;
     align-items: center;
 }
+
+.wrapper {
+    background-color: lightcoral;
+    padding: 10px;
+    width: 100vh;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: rgb(81, 81, 255);
+}
